@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.ossan.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_joinFragment"
+            app:destination="@id/joinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/joinFragment"
+        android:name="com.example.ossan.JoinFragment"
+        android:label="fragment_join"
+        tools:layout="@layout/fragment_join" >
+        <action
+            android:id="@+id/action_joinFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homepageFragment"
+        android:name="com.example.ossan.HomepageFragment"
+        android:label="fragment_homepage"
+        tools:layout="@layout/fragment_homepage">
+        <action
+            android:id="@+id/action_homepageFragment_to_singleFragment"
+            app:destination="@id/singleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleFragment"
+        android:name="com.example.ossan.SingleProductFragment"
+        android:label="fragment_story"
+        tools:layout="@layout/fragment_single_story" >
+        <action
+            android:id="@+id/action_singleFragment_to_shoppingcartFragment"
+            app:destination="@id/shoppingcartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myaccountFragment"
+        android:name="com.example.ossan.MyaccountFragment"
+        android:label="fragment_myaccount"
+        tools:layout="@layout/fragment_myaccount" >
+        <action
+            android:id="@+id/action_myaccountFragment_to_myaccountMainFragment"
+            app:destination="@+id/myaccountMainFragment" />
+        <action
+            android:id="@+id/action_myaccountFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_myaccountFragment_to_orderFragment"
+            app:destination="@id/orderFragment" />
+        <action
+            android:id="@+id/action_myaccountFragment_to_introductionFragment"
+            app:destination="@id/introductionFragment" />
+        <action
+            android:id="@+id/action_myaccountFragment_to_otherFragment"
+            app:destination="@id/otherFragment" />
+        <action
+            android:id="@+id/action_myaccountFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoppingcartFragment"
+        android:name="com.example.ossan.ShoppingcartFragment"
+        android:label="fragment_shoppingcart"
+        tools:layout="@layout/fragment_shoppingcart" >
+        <action
+            android:id="@+id/action_shoppingcartFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/storyFragment"
+        android:name="com.example.ossan.StoryFragment"
+        android:label="fragment_story"
+        tools:layout="@layout/fragment_story" >
+        <action
+            android:id="@+id/action_storyFragment_to_singleStoryFragment"
+            app:destination="@id/singleStoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleStoryFragment"
+        android:name="com.example.ossan.SingleStoryFragment"
+        android:label="fragment_single_story"
+        tools:layout="@layout/fragment_single_story" />
+    <fragment
+        android:id="@+id/myaccountMainFragment"
+        android:name="com.example.ossan.MyaccountMainFragment"
+        android:label="fragment_myaccount_main"
+        tools:layout="@layout/fragment_myaccount_main" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.ossan.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.example.ossan.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" />
+    <fragment
+        android:id="@+id/introductionFragment"
+        android:name="com.example.ossan.IntroductionFragment"
+        android:label="fragment_introduction"
+        tools:layout="@layout/fragment_introduction" />
+    <fragment
+        android:id="@+id/otherFragment"
+        android:name="com.example.ossan.OtherFragment"
+        android:label="fragment_other"
+        tools:layout="@layout/fragment_other" />
+</navigation>

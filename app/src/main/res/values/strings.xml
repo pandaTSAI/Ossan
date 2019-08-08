@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Ossan</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_name">登入</string>
+    <string name="join_name">註冊</string>
+    <string name="homepage_name">找大叔</string>
+    <string name="my_account_name">我的帳號</string>
+    <string name="check_my_account_name">查看個人資料</string>
+    <string name="story_name">故事館</string>
+    <string name="shopping_cart">購物車</string>
+    <string name="FacebookSign">以facebook帳戶登入</string>
+    <string name="textDataError">Data error!</string>
+    <string name="textInvalidEmailOrPassword">Email or password invalid</string>
+    <string name="server_client_id">Ossan</string>
+
+    <string name="facebook_app_id">2925703874321422</string>
+    <string name="fb_login_protocol_scheme">fb2925703874321422</string>
+
+
+
+
+</resources>
